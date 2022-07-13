@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      .test-css {
+        color: blue;
+      }
+
+      /* make sure image not overflows */
+      img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Information</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1><span class="test-css">Delvin's</span> Website</h1>
+
+      <section id="education">
+        <h2>Education</h2>
+        <h3>University of California, San Diego - San Diego, CA</h3>
+        <p>Major: Computer Science B.S.</p>
+        <figure>
+          <img src="images/ucsd.jpg" alt="UCSD" />
+          <figcaption>UCSD</figcaption>
+        </figure>
+        <aside>
+          <p>
+            <em>The University of California, San Diego</em> is a public
+            land-grant research university in San Diego,
+          </p>
+        </aside>
+
+        <br />
+        <h3>Diablo Valley College - Pleasant Hill, CA</h3>
+        <p>Major: Computer Science</p>
+        <p>Awards & Honors: Alpha Gamma Sigma (DVC)</p>
+        <figure>
+          <picture>
+            <source
+              media="(min-width:1200px)"
+              srcset="images/diablo-valley@1200.jpg"
+            />
+            <img src="images/diablo-valley.jpg" alt="Diablo Valley" />
+          </picture>
+          <figcaption>Diablo Valley College</figcaption>
+        </figure>
+
+        <!-- Courseworks for Education in Diablo Valley College -->
+        <table>
+          <caption>
+            Courseworks in Diablo Valley College
+          </caption>
+          <colgroup>
+            <col style="width: 80%;" />
+            <col style="width: 20%;" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Code</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Advance Data Structures</td>
+              <td>CSE 100</td>
+            </tr>
+            <tr>
+              <td>Component & Design Tech/ Digital System</td>
+              <td>CSE 140</td>
+            </tr>
+            <tr>
+              <td>Theory of Computation</td>
+              <td>CSE 150</td>
+            </tr>
+            <tr>
+              <td>Intro/Computer Architecture</td>
+              <td>CSE 141</td>
+            </tr>
+            <tr>
+              <td>Teach Computation/ Digital World</td>
+              <td>EDS 124 AR</td>
+            </tr>
+            <tr>
+              <td>Teach Computational Thinking</td>
+              <td>EDS 124 BR</td>
+            </tr>
+            <tr>
+              <td>Data Science in Practice</td>
+              <td>COGS 108</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="#experiences">
+        <h2>My Experiences</h2>
+        <ol>
+          <li>
+            <h3>PT Sinar Elektronika SEB Jakarta</h3>
+            <p>
+              Design Engineer Intern on Electrical Control Panel Design Jul 2019
+              – Aug 2019
+            </p>
+            <ol>
+              <li>
+                Prototyping: Worked with other senior design engineers to
+                re-model electrical control panel and server rack based on
+                detailed drawing using CAD programming tools such as Solidworks
+                and AutoCAD. Assembled all components into one using Solidworks
+                to checked the overall design. Made a detailed drawing of each
+                component using AutoCAD with preferred dimensions and
+                transferred the files to the production team.
+              </li>
+              <li>
+                Hardware Assembly: Worked with other senior design engineers
+                overseeing manufacturing team in assembling parts. Tested the
+                overall quality of the finished product alongside the quality
+                control team and removed defective products.
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+
+      <section id="#projects">
+        <h2>Projects</h2>
+        <ol>
+          <li>
+            <h3>Automated Golf Ball Launcher</h3>
+            <ul>
+              <li>
+                Designed a ”rack and pinion” launching mechanism for the golf
+                ball launcher and 3D printed the parts.
+              </li>
+              <li>
+                Analyzed and created the dynamic calculation of the launcher to
+                determine the launch angle of the launcher and the required type
+                of spring using MATLAB.
+              </li>
+              <li>
+                Assembled the circuitry of the golf ball launcher to make it
+                fully automated.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Robot Vehicle</h3>
+            <ul>
+              <li>
+                Designed the propulsion system of the robot using Solidworks
+                based on real-life product.
+              </li>
+              <li>
+                Used limit mates in assembly to set a movement restriction for
+                the propulsion.
+              </li>
+              <li>
+                Used MATLAB to simulates the movement of the robot and
+                constructed new commands to control the movement of the robot.
+              </li>
+              <li>
+                Used a closed loop control type to simulate the movement of the
+                robot.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Self-programmed Computer Mouse</h3>
+            <ul>
+              <li>
+                Designed and generate commands to control monitor cursor using
+                potentiometers with MATLAB and Arduino.
+              </li>
+              <li>
+                Experimented using the modified mouse in playing Agario.io.
+              </li>
+              <li>
+                Adding new types of commands on Arduino and Matlab to control a
+                servomotor that acts as the accelerator in Agario.io.
+              </li>
+              <li>
+                Programmed a magnetometer that acts as a compass for the robot
+                in Agario.io.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <form>
+          <fieldset>
+            <legend>Contact Form</legend>
+            <div>
+              <label for="name">Name</label><br />
+              <input type="text" id="name" />
+            </div>
+            <br />
+            <div>
+              <label for="email">Email</label><br />
+              <input type="email" id="email" />
+            </div>
+            <br />
+            <div>
+              <label for="message">Message</label><br />
+              <textarea id="message" rows="10" cols="50"></textarea>
+            </div>
+            <br />
+            <div>
+              <label for="category">Question Category:</label>
+              <select id="category" name="category">
+                <option value="question">question</option>
+                <option value="appreciation">appreciation</option>
+                <option value="event invitation">event invitation</option>
+                <optgroup label="Recruitment Purposes">
+                  <option value="interview invitation">
+                    interview invitation
+                  </option>
+                  <option value="work opportunity">
+                    work opportunity
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+            <br />
+            <div>
+              <label for="device"
+                >Device used (website improvement purposes)</label
+              >
+              <br />
+              <input list="devices" type="text" id="device" name="device" />
+              <datalist id="devices">
+                <option value="Windows"></option>
+                <option value="iOS"></option>
+                <option value="Android"></option>
+                <option value="macOS"></option>
+                <option value="other"></option>
+              </datalist>
+            </div>
+            <br />
+            <button type="submit">Submit</button>
+            <template>
+              <strong>Submitted.</strong>
+            </template>
+          </fieldset>
+        </form>
+
+        <p>
+          If you prefer to contact me from other platform check details below:
+        </p>
+
+        <details>
+          <summary>Email</summary>
+          <a href="mailto:delvingodeli11@gmail.com">delvingodeli11@gmail.com</a>
+        </details>
+        <details>
+          <summary>Phone</summary>
+          <ol>
+            <li>(925)262-7692</li>
+            <li>(925)262-7693</li>
+            <li>(925)262-7694</li>
+          </ol>
+        </details>
+        <details>
+          <summary>JSON Format for the geeks</summary>
+          <pre>
+          <code>
+{
+  "email": "delvingodeli11@gmail.com",
+  "phone": "(925)262-7692"
+}
+          </code>
+        </pre>
+        </details>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Appreciation Section. Play me!</h2>
+        <canvas id="myCanvas"></canvas>
+        <audio controls>
+          <source src="files/audio.wav" type="audio/wav" />
+          Your browser does not support the audio tag.
+        </audio>
+        <video width="320" height="240" controls>
+          <source src="files/clap.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/a9NIZOvfKpc"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section>
+        <h2>Let's Make <i>Something</i> New</h2>
+        <h3>See My Works</h3>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+          />
+        </svg>
+        Made by <b>Delvin Tuankun</b>
+      </p>
+    </footer>
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.strokeText("Thanks for tuning in!", 10, 50);
+    </script>
+  </body>
+</html>
